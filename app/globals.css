@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: var(--font-playfair), serif;
+  --font-sans: var(--font-jakarta), sans-serif;
+  
+  --color-workshop-bg: #F9F6F0;
+  --color-workshop-card: #FFFFFF;
+  --color-workshop-text: #334135;
+  --color-workshop-muted: #627263;
+  --color-workshop-primary: #3F4E3F;
+  --color-workshop-accent: #C98B9B;
+  --color-workshop-accent-hover: #B87D8B;
+  --color-workshop-border: #E5DEC9;
+}
+
+.workshop-card {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 4px 20px -2px rgba(63, 78, 63, 0.05);
+}
+
+.workshop-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px -4px rgba(63, 78, 63, 0.12);
+}
+
+.workshop-btn {
+  transition: all 0.25s ease-in-out;
+}
+
+.workshop-btn:hover {
+  transform: translateY(-1px);
+}
